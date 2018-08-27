@@ -7,7 +7,7 @@ import * as sharedReducer from './state-management/reducers/shared-reducer.map';
 @Injectable()
 export class SharedSandbox {
 
-    constructor(private store: Store<any>) { }
+    constructor(public store: Store<any>) { }
 
 
     public getProgress(): Observable<boolean> {
